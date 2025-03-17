@@ -99,7 +99,7 @@ public class repDatosController {
 
     private void valorDefectoCbo() {
         cboUnidadEntrada.setValue("b");
-        cboUnidadEntrada.setValue("B");
+        cboUnidadSalida.setValue("B");
     }
 
     private String extraerTipo(String unidad) {
