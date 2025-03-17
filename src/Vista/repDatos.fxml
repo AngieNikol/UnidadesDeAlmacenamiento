@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="796.0" style="-fx-background-color: d9cbff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.repDatosController">
+   <children>
+      <Text layoutX="135.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Conversor de Unidades de Representación de Datos" textOrigin="CENTER">
+         <font>
+            <Font name="Bernard MT Condensed" size="27.0" />
+         </font>
+         <fill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.14327485859394073" green="0.5526315569877625" blue="0.3206627666950226" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.011208577081561089" green="0.30263158679008484" blue="0.1374918818473816" />
+                     </color>
+                  </Stop>
+               </stops>
+            </RadialGradient>
+         </fill>
+      </Text>
+      <Button fx:id="cmdConvertir" layoutX="31.0" layoutY="140.0" mnemonicParsing="false" onAction="#ConvertirUnidad" prefHeight="41.0" prefWidth="734.0" style="-fx-background-color: #23e1a5; -fx-border-color: #005136;" text="Convertir" textFill="#005136">
+         <font>
+            <Font name="Bodoni MT" size="23.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtIngresarValor" layoutX="31.0" layoutY="73.0" prefHeight="41.0" prefWidth="173.0" promptText="Ingrese la cantidad" style="-fx-background-color: e1fff0; -fx-border-color: #005136;">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font></TextField>
+      <ComboBox fx:id="cboUnidadEntrada" layoutX="211.0" layoutY="73.0" prefHeight="41.0" prefWidth="173.0" style="-fx-background-color: #23e1a5; -fx-border-color: #005136;" />
+      <TextField fx:id="txtResultadoConversion" disable="true" layoutX="397.0" layoutY="73.0" prefHeight="41.0" prefWidth="188.0" promptText="Resultado" style="-fx-background-color: e1fff0; -fx-border-color: #005136;">
+         <font>
+            <Font name="Bodoni MT" size="15.0" />
+         </font></TextField>
+      <ComboBox fx:id="cboUnidadSalida" layoutX="592.0" layoutY="73.0" prefHeight="41.0" prefWidth="173.0" style="-fx-background-color: #23e1a5; -fx-border-color: #005136;" />
+   </children>
+</AnchorPane>
